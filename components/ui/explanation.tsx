@@ -27,7 +27,7 @@ const Explanantion: FunctionComponent<ExplanantionProps> = ({
     <AlertDialog>
       <AlertDialogTrigger
         disabled={disabled}
-        className="px-4 py-2 bg-[#E0E7FF] text-indigo-700 rounded-lg cursor-pointer disabled:cursor-default disabled:opacity-50"
+        className="px-4 py-2 bg-[#E0E7FF] text-indigo-700 rounded-lg cursor-pointer disabled:cursor-default disabled:opacity-50 transition-all ease-in-out duration-300"
       >
         Explanation
       </AlertDialogTrigger>

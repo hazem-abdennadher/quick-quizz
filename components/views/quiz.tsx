@@ -91,9 +91,13 @@ const Quiz: FunctionComponent<QuizzProps> = () => {
           <div className="flex w-full items-center justify-between gap-4">
             <Explanantion disabled={!selectedAnswer} {...explanation} />
 
-            <Button disabled={!selectedAnswer} onClick={() => NextQuestion()}>
+            <button
+              className="px-4 py-2 bg-indigo-600 text-white rounded-lg cursor-pointer disabled:cursor-default disabled:opacity-50 transition-all ease-in-out duration-300"
+              disabled={!selectedAnswer}
+              onClick={() => NextQuestion()}
+            >
               Next Question
-            </Button>
+            </button>
           </div>
         </>
       )}
