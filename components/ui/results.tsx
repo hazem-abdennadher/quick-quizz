@@ -12,7 +12,7 @@ const Results: FunctionComponent<ResultsProps> = ({ isGood, score }) => {
   return (
     <Container
       className={cn(
-        'flex gap-4 items-start p-4',
+        'flex gap-4 items-start p-4 text-sm',
         isGood ? 'bg-teal-50' : 'bg-red-50'
       )}
     >
@@ -24,7 +24,12 @@ const Results: FunctionComponent<ResultsProps> = ({ isGood, score }) => {
         )}
       </div>
       <div>
-        <p className={cn('mb-2', isGood ? 'text-teal-800' : 'text-red-800 ')}>
+        <p
+          className={cn(
+            'mb-2 font-medium',
+            isGood ? 'text-teal-800' : 'text-red-800 '
+          )}
+        >
           You got {score}/2
         </p>
         <ul
